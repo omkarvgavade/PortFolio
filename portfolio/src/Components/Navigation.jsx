@@ -10,22 +10,22 @@ function Navigation() {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/home" activeClassName="active-class">Home</NavLink>
+                    <NavLink to="/" activeClassName="active-class" exact >Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about" activeClassName="active-class">About</NavLink>
+                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/resume" activeClassName="active-class">Resume</NavLink>
+                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Portfolios" activeClassName="active-class">Portfolios</NavLink>
+                    <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/blogs" activeClassName="active-class">Blogs</NavLink>
+                    <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact" activeClassName="active-class">Contact</NavLink>
+                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>
 
             </ul>
@@ -69,9 +69,13 @@ border-right: 1px solid var(--border-color) ;
         display: block;
         a{
             display: block;
-            padding: .2rem 0;
+            padding: .45rem 0;
             position: relative;
-            z-index:4;
+            z-index:10;
+            text-transform: uppercase;
+            transition: all .4s ease-in-out;
+            font-weight: 600;
+            letter-spacing: 1px;
             &:hover{
                 cursor: pointer;
                

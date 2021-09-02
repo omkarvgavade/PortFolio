@@ -62,13 +62,16 @@ border-right: 1px solid var(--border-color) ;
 .nav-items{
     width: 100%;
     text-align: center;
+    .active-class{
+        background-color: var(--primary-color)
+    }
     li{
         display: block;
         a{
             display: block;
             padding: .2rem 0;
             position: relative;
-           
+            z-index:4;
             &:hover{
                 cursor: pointer;
                
@@ -80,8 +83,11 @@ border-right: 1px solid var(--border-color) ;
                 left: 0;
                 width:0;
                 height: 50%;
-                background-color:red;
-                 transition: All 0.4s ease-in-out cubic-bezier(1,-0.2,.25,.95);
+                background-color:var(--primary-color);
+                 transition: All 0.4s cubic-bezier(1,-0.2,.25,.95);
+                 z-index: 3;
+                 opacity: 0.21;
+                 transform-origin: right;
             }
         }
         a:hover::before{

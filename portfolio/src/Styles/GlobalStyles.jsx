@@ -31,6 +31,15 @@ a{
     color:inherit;
     font-size: inherit;
 }
-
+h1{
+    font-size: 3rem;
+    color:var(--white-color);
+    span{
+         font-size: 3rem;
+    }
+}
+span{
+    color:var(--primary-color)
+}
 
 `

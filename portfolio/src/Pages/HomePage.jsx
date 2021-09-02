@@ -16,16 +16,16 @@ function HomePage() {
                 <h1>HI I'm <span>Omkar Gavade</span></h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eius eaque modi voluptatum consectetur quas distinctio soluta! Dolores, ad rerum!</p>
                 <div className="icons">
-                    <div className="i-linkedin">
+                    <div className="icon i-linkedin">
                         <LinkedInIcon />
                     </div>
-                    <div className="i-github">
+                    <div className="icon i-github">
                         <GitHubIcon />
                     </div>
-                    <div className="i-facebook">
+                    <div className="icon i-facebook">
                         <FacebookIcon />
                     </div>
-                    <div className="i-twitter">
+                    <div className="icon i-twitter">
                         <TwitterIcon />
                     </div>
                 </div>
@@ -49,6 +49,22 @@ position: relative;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    width: 80%;
+    .icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+.icon{
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    svg{
+       marker: .5rem;
+    }
+}
+    }
 }
 
 `

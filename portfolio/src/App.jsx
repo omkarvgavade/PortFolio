@@ -6,7 +6,7 @@ import AboutPage from "./Pages/AboutPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import PortFoliosPage from "./Pages/PortFoliosPage";
-import ResumePage from "./Pages/ResumePage";
+import SkillsPage from "./Pages/SkillsPage";
 function App() {
   return (
     <div className="App">
@@ -28,8 +28,8 @@ function App() {
           <Route exact path="/blogs">
             <BlogsPage />
           </Route>
-          <Route exact path="/resume">
-            <ResumePage />
+          <Route exact path="/skills">
+            <SkillsPage />
           </Route>
           <Route exact path="/portfolios">
             <PortFoliosPage />

@@ -12,12 +12,12 @@ import mongodb from '../Images/mongodb.png'
 import nodejs from '../Images/nodejs.png'
 import react from '../Images/react.png'
 import redux from '../Images/redux.png'
-import Title from './Title'
+
 function SkillsSection() {
     return (
         <InnerLayout>
             <SkillsSectionStyled>
-                <Title title={"Skills"} span={"skills"} />
+
                 <div className="mainCont">
                     <div className="frontend">
                         <h4>FrontEnd</h4>
@@ -44,7 +44,7 @@ function SkillsSection() {
 
 const SkillsSectionStyled = styled.div`
 .mainCont{
-    margin-top: 5rem;
+ 
     display: flex;
      flex-direction: column;
     justify-content:space-between;

@@ -16,7 +16,7 @@ function Navigation() {
                     <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
+                    <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
                 </li>
                 <li>
                     <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>

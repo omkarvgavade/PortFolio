@@ -20,7 +20,7 @@ function SkillsSection() {
                 <Title title={"Skills"} span={"skills"} />
                 <div className="mainCont">
                     <div className="frontend">
-                        <h4>FronEnd</h4>
+                        <h4>FrontEnd</h4>
                         <SkillsLogo img={html5} title={"HTML-5"} />
                         <SkillsLogo img={css} title={"CSS-3"} />
                         <SkillsLogo img={react} title={"React"} />

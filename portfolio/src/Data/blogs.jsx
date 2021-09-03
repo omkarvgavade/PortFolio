@@ -25,7 +25,8 @@ const blogs = [
         month: "April",
         image: blog2,
         link: "#"
-    }
+    },
+
 ]
 
 export default blogs

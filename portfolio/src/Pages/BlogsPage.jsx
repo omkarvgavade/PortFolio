@@ -4,27 +4,27 @@ import styled from "styled-components";
 import Title from "../Components/Title";
 import { MainLayout, InnerLayout } from "../Styles/layouts";
 function BlogsPage() {
-    return (
-        <MainLayout>
-            <BlogsStyled>
-                <Title title={"Blogs"} span={"Blogs"} />
-                <InnerLayout className={"blog"}>
-                    {blogs.map((blog) => {
-                        return (
-                            <div key={blog.id} className={"blog-item"}>
-                                <div className="image">
-                                    <img src={blog.image} alt="" />
-                                </div>
-                                <div className="title">
-                                    <a href={blog.link}>{blog.title}</a>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </InnerLayout>
-            </BlogsStyled>
-        </MainLayout>
-    );
+  return (
+    <MainLayout>
+      <BlogsStyled>
+        <Title title={"Blogs"} span={"Blogs"} />
+        <InnerLayout className={"blog"}>
+          {blogs.map((blog) => {
+            return (
+              <div key={blog.id} className={"blog-item"}>
+                <div className="image">
+                  <img src={blog.image} alt="" />
+                </div>
+                <div className="title">
+                  <a href={blog.link}>{blog.title}</a>
+                </div>
+              </div>
+            );
+          })}
+        </InnerLayout>
+      </BlogsStyled>
+    </MainLayout>
+  );
 }
 const BlogsStyled = styled.div`
   .blog {
@@ -58,7 +58,7 @@ const BlogsStyled = styled.div`
       padding: .5rem;
       img {
         width: 100%;
-   
+
         object-fit: cover;
         transition: all 0.4s ease-in-out;
         &:hover {

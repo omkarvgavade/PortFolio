@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     --scrollbar-thump-color:#6b6b6b;
     --scrollbar-track-color:#383838;
     --background-dark-gray:#191D2B;
+ 
 }
 *{
     margin: 0;

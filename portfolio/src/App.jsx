@@ -1,16 +1,60 @@
 import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components'
 import HomePage from "./Pages/HomePage";
-import { Switch, Route } from 'react-router-dom'
+import { Switch as Switching, Route } from 'react-router-dom'
 import AboutPage from "./Pages/AboutPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import PortFoliosPage from "./Pages/PortFoliosPage";
 import SkillsPage from "./Pages/SkillsPage";
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import Switch from '@material-ui/core/Switch'
+import { useEffect, useState } from "react";
+import { IconButton } from '@material-ui/core';
+
+import MenuIcon from '@material-ui/icons/Menu';
 function App() {
+  const [theme, setTheme] = useState('dark-theme')
+  const [checked, setChecked] = useState(false)
+  const [navToggle, setNavToggle] = useState(false)
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme])
+  const themeToggler = () => {
+    if (theme === "light-theme") {
+      setTheme('dark-theme')
+      setChecked(false)
+    } else {
+      setTheme('light-theme')
+      setChecked(true)
+    }
+  }
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar navToggle={navToggle} />
+      <div className="theme">
+        <div className="light-dark-mode">
+          <div className="left-content">
+            <Brightness4Icon />
+          </div>
+          <div className="right-content">
+            <Switch
+              value=""
+              checked={checked}
+              onClick={themeToggler}
+              inputProps={{ "aria-label": "" }}
+              size="medium"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="ham-burger-menu">
+        <IconButton onClick={() => {
+          setNavToggle(!navToggle)
+        }}>
+          <MenuIcon />
+        </IconButton>
+      </div>
       <MainContentStyled >
         <div className="lines">
           <div className="line-1"></div>
@@ -18,7 +62,8 @@ function App() {
           <div className="line-3"></div>
           <div className="line-4"></div>
         </div>
-        <Switch>
+
+        <Switching>
           <Route exact path="/">
             <HomePage />
           </Route>
@@ -37,7 +82,7 @@ function App() {
           <Route exact path="/contact">
             <ContactPage />
           </Route>
-        </Switch>
+        </Switching>
       </MainContentStyled>
     </div>
   );
@@ -48,6 +93,11 @@ const MainContentStyled = styled.main`
 position: relative;
 margin-left: 16.3rem;
 min-height: 100vh;
+
+@media screen and (max-width:1200px){
+margin-left: 0;
+}
+
 .lines{
   position: absolute;
   min-height:100vh;

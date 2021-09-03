@@ -16,6 +16,9 @@ h2{
     text-transform: uppercase;
     position: relative;
     padding-bottom: .8rem;
+      @media screen and (max-width: 496px) {
+              font-size:2.8rem
+          }
     &::before{
         content:"";
         position: absolute;
@@ -43,7 +46,13 @@ h2{
           left: 0;
           top: 30%;
           z-index: -1;
-    }
+
+          @media screen and (max-width: 620px) {
+              font-size:4rem
+          }
+          @media screen and (max-width: 496px) {
+              font-size:3rem
+          }
 
 }
 

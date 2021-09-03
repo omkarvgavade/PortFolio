@@ -7,37 +7,37 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 function HomePage() {
-    return (
-        <HomePageStyled>
-            <div className="p-particles-js">
-                <Particle />
-            </div>
-            <div className="typography">
-                <h1>
-                    HI I'm <span>Omkar Gavade</span>
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-                    eius eaque modi voluptatum consectetur quas distinctio soluta!
-                    Dolores, ad rerum!
-                </p>
-                <div className="icons">
-                    <a href="#" className="icon i-linkedin">
-                        <LinkedInIcon />
-                    </a>
-                    <a href="#" className="icon i-github">
-                        <GitHubIcon />
-                    </a>
-                    <a href="#" className="icon i-facebook">
-                        <FacebookIcon />
-                    </a>
-                    <a href="#" className="icon i-twitter">
-                        <TwitterIcon />
-                    </a>
-                </div>
-            </div>
-        </HomePageStyled>
-    );
+  return (
+    <HomePageStyled>
+      <div className="p-particles-js">
+        <Particle />
+      </div>
+      <div className="typography">
+        <h1>
+          Hi, I'm <span>Omkar Gavade</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          eius eaque modi voluptatum consectetur quas distinctio soluta!
+          Dolores, ad rerum!
+        </p>
+        <div className="icons">
+          <a href="#" className="icon i-linkedin">
+            <LinkedInIcon />
+          </a>
+          <a href="#" className="icon i-github">
+            <GitHubIcon />
+          </a>
+          <a href="#" className="icon i-facebook">
+            <FacebookIcon />
+          </a>
+          <a href="#" className="icon i-twitter">
+            <TwitterIcon />
+          </a>
+        </div>
+      </div>
+    </HomePageStyled>
+  );
 }
 const HomePageStyled = styled.header`
   width: 100%;

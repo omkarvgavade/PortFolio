@@ -48,6 +48,16 @@ const SkillsSectionStyled = styled.div`
     display: flex;
      flex-direction: column;
     justify-content:space-between;
+    @media screen and (max-width:900px){
+        flex-direction: row;
+        &>div{
+            flex-direction: column;
+             margin-bottom: 3rem;
+        &>div{
+            margin: 1rem;
+        }
+        }
+    }
     h4{
         color:var(--white-color)
     }

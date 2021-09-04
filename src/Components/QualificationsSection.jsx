@@ -42,6 +42,7 @@ const QualificationsSectionStyled = styled.section`
     margin-top: 5rem;
     @media screen and (max-width: 768px) {
       flex-direction: column;
+      width: 100%;
       & > div {
         margin: 1rem;
       }

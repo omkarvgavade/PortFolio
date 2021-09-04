@@ -32,6 +32,7 @@ transition : all .4s ease-in-out;
     grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-gap: 0.5rem;
     height: 17rem;
+      box-shadow: 1px 1px 8px black;
     img{
         width: 7rem;
     }

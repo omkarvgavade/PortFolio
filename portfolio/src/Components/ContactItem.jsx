@@ -25,6 +25,12 @@ function ContactItem({ title, icon, contact1 }) {
 const ContactItemStyled = styled.div`
 padding:1.5rem 2rem ;
 background-color:var(--background-dark-gray);
+    box-shadow: 1px 1px 8px black;
+    background-color: var(--background-dark-gray);
+    :hover{
+  transform: translateY(-10px);
+   transition: all .4s ease-in-out;
+    }
 &:not(:last-child){
     margin-bottom: 2rem;
 }

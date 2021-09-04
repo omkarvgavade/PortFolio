@@ -6,6 +6,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import medium from "../Images/medium.png";
 function HomePage() {
   return (
     <HomePageStyled>
@@ -17,20 +18,44 @@ function HomePage() {
           Hi, I'm <span>Omkar Gavade</span>
         </h1>
         <p>
-          It's nice to meet you. I am a full stack web developer residing in Maharashtra, India.
+          It's nice to meet you. I am a full stack web developer residing in
+          Maharashtra, India.
         </p>
         <div className="icons">
-          <a href="#" className="icon i-linkedin">
+          <a
+            href="https://www.linkedin.com/in/omkar-gavade-60ba80179"
+            target="_blank"
+            className="icon i-linkedin"
+          >
             <LinkedInIcon />
           </a>
-          <a href="#" className="icon i-github">
+          <a
+            href="https://github.com/omkarvgavade"
+            target="_blank"
+            className="icon i-github"
+          >
             <GitHubIcon />
           </a>
-          <a href="#" className="icon i-facebook">
+          <a
+            href="https://www.facebook.com/omivpn.gawade.3/"
+            target="_blank"
+            className="icon i-facebook"
+          >
             <FacebookIcon />
           </a>
-          <a href="#" className="icon i-twitter">
+          <a
+            href="https://twitter.com/OmkarGa52302750"
+            target="_blank"
+            className="icon i-twitter"
+          >
             <TwitterIcon />
+          </a>
+          <a
+            href="https://medium.com/@omkarvgawade"
+            target="_blank"
+            className="icon i-medium"
+          >
+            <img src={medium} alt="" />
           </a>
         </div>
       </div>
@@ -95,11 +120,23 @@ const HomePageStyled = styled.header`
           color: rgb(23, 117, 241);
         }
       }
-      .i-linkedin{
-          &:hover{
-              border: 2px solid rgb(23, 117, 241);
-              color: rgb(23, 117, 241);
-          }
+      .i-linkedin {
+        &:hover {
+          border: 2px solid rgb(23, 117, 241);
+          color: rgb(23, 117, 241);
+        }
+      }
+      .i-medium {
+        background-color: white;
+        img {
+          width: 1.5rem;
+        }
+
+        &:hover {
+          border: 2px solid rgb(23, 117, 241);
+          color: rgb(23, 117, 241);
+          background-color: red;
+        }
       }
     }
   }

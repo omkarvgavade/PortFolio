@@ -36,9 +36,14 @@ const BlogsStyled = styled.div`
             grid-template-columns: repeat(1, 1fr);
         }
     .blog-item {
-      background-color: var(--background-dark-gray);
-      padding: 1rem 1rem;
 
+      padding: 1rem 1rem;
+  box-shadow: 1px 1px 8px black;
+    background-color: var(--background-dark-gray);
+    :hover{
+  transform: translateY(-10px);
+   transition: all .4s ease-in-out;
+    }
         .title {
       a {
         font-size: 1.8rem;

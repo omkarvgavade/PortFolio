@@ -50,9 +50,18 @@ const MenuItemStyled = styled.div`
     .grid-item{
         height: 20rem;
         .project-content{
-            display: block;
-            position: relative;
-            overflow: hidden;
+          display: block;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid var(--background-light-color); */
+    padding: 1rem 7px;
+    box-shadow: 1px 1px 8px black;
+    background-color: var(--background-dark-gray);
+    :hover{
+  transform: translateY(-10px);
+   transition: all .4s ease-in-out;
+    }
+  
             h6{
                 font-size: 1.5rem;
                 color: var(--white-color);

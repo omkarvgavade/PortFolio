@@ -14,7 +14,7 @@ function PortFoliosPage() {
 
     return (
         <MainLayout>
-            <Title title={"Portfolios"} span={"Portfolios"} />
+            <Title title={"Projects"} span={"Projects"} />
             <InnerLayout>
                 <Menu menuItem={menuItem} />
             </InnerLayout>

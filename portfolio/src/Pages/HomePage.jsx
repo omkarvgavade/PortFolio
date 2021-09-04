@@ -17,9 +17,7 @@ function HomePage() {
           Hi, I'm <span>Omkar Gavade</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-          eius eaque modi voluptatum consectetur quas distinctio soluta!
-          Dolores, ad rerum!
+          It's nice to meet you. I am a full stack web developer residing in Maharashtra, India.
         </p>
         <div className="icons">
           <a href="#" className="icon i-linkedin">

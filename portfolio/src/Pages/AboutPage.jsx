@@ -9,7 +9,7 @@ function AboutPage() {
     return (
         <MainLayout>
             <AboutStyled>
-                <Title title={'Aboout Me'} span={'About Me'} />
+                <Title title={'About Me'} span={'About Me'} />
                 <ImageSection />
                 <QualificationsSections />
             </AboutStyled>
@@ -17,9 +17,7 @@ function AboutPage() {
     )
 }
 const AboutStyled = styled.section`
-@media screen and (max-width:1000px){
-    
-}
+
 
 
 

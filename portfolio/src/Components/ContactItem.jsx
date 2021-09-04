@@ -11,7 +11,11 @@ function ContactItem({ title, icon, contact1 }) {
             </div>
             <div className="right-content">
                 <h6>{title}</h6>
-                <p>{contact1}</p>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={contact1 === "omkarvgawade@gmail.com" ? `mailTo:${contact1}` : contact1 === "+917018805197" ? `tel:${contact1}` : "/contact"}
+                >{contact1}</a>
 
             </div>
         </ContactItemStyled>
@@ -44,7 +48,7 @@ align-items: center;
         font-size: 1.2rem;
         padding-bottom:.6rem;
     }
-    p{
+    a{
         padding: .1rem 0;
     }
 }

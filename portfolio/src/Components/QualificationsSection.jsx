@@ -59,7 +59,7 @@ flex-direction: column;
       img {
         width: 10rem;
         position: relative;
-        left: 10%;
+        left: 13%;
       }
     }
   }

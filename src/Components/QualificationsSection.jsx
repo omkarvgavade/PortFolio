@@ -38,21 +38,20 @@ function QualificationsSections() {
 const QualificationsSectionStyled = styled.section`
   .qualifications {
     display: flex;
-        width: 57rem;
-margin-top: 5rem;
-@media screen and (max-width:768px){
-flex-direction: column;
-&>div{
-  margin: 1rem;
-}
-}
+    width: 57rem;
+    margin-top: 5rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      & > div {
+        margin: 1rem;
+      }
+    }
     & > div {
-         width: 16rem;
+      width: 16rem;
       img {
         position: relative;
         left: 25%;
       }
-     
     }
 
     & > div:nth-child(1) {

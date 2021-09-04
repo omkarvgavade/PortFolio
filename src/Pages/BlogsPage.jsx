@@ -16,7 +16,9 @@ function BlogsPage() {
                   <img src={blog.image} alt="" />
                 </div>
                 <div className="title">
-                  <a target="_blank" href={blog.link}>{blog.title}</a>
+                  <a target="_blank" href={blog.link}>
+                    {blog.title}
+                  </a>
                 </div>
               </div>
             );
@@ -32,37 +34,36 @@ const BlogsStyled = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
-     @media screen and (max-width: 770px){
-            grid-template-columns: repeat(1, 1fr);
-        }
-    .blog-item {
-
-      padding: 1rem 1rem;
-  box-shadow: 1px 1px 8px black;
-    background-color: var(--background-dark-gray);
-    :hover{
-  transform: translateY(-10px);
-   transition: all .4s ease-in-out;
+    @media screen and (max-width: 770px) {
+      grid-template-columns: repeat(1, 1fr);
     }
-        .title {
-      a {
-        font-size: 1.8rem;
-        padding: 2rem 0;
-        color: var(--white-color);
-        cursor: pointer;
+    .blog-item {
+      padding: 1rem 1rem;
+      box-shadow: 1px 1px 8px black;
+      background-color: var(--background-dark-gray);
+      :hover {
+        transform: translateY(-10px);
         transition: all 0.4s ease-in-out;
-        &:hover {
-          color: var(--primary-color);
+      }
+      .title {
+        a {
+          font-size: 1.8rem;
+          padding: 2rem 0;
+          color: var(--white-color);
+          cursor: pointer;
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            color: var(--primary-color);
+          }
         }
       }
-    }
     }
 
     .image {
       width: 100%;
- 
+
       overflow: hidden;
-      padding: .5rem;
+      padding: 0.5rem;
       img {
         width: 100%;
 
@@ -74,7 +75,6 @@ const BlogsStyled = styled.div`
         }
       }
     }
-  
   }
 `;
 export default BlogsPage;

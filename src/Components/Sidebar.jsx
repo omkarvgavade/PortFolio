@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 function Sidebar({ navToggle }) {
-    return (
-        <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
-            <Navigation />
-        </SidebarStyled>
-    );
+  return (
+    <SidebarStyled style={{ navToggle }} className={`${navToggle ? "nav-toggle" : ""}`}>
+      <Navigation />
+    </SidebarStyled>
+  );
 }
 
 const SidebarStyled = styled.div`

@@ -97,8 +97,8 @@ display: none;
 
 }
  .nav-toggle{
-    transform: translateX(0);
-    z-index: 20;
+    transform: translateX(0) !important;
+    z-index: 20 !important;
 }
 *{
     margin: 0;

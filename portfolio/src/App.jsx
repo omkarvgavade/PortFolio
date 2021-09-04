@@ -77,6 +77,7 @@ function App() {
           <Route exact path="/contact">
             <ContactPage />
           </Route>
+
         </Switching>
       </MainContentStyled>
     </div>

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import myResume from "../Images/myResume.jpg";
 import PrimaryButton from "./PrimaryButton";
+import omkargavaderesume from '../Data/Resume/omkargavaderesume.pdf'
+
 function ImageSection() {
     return (
         <ImageSectionStyled>
@@ -39,7 +41,10 @@ function ImageSection() {
                         <p>: Full Stack Web Developer</p>
                     </div>
                 </div>
-                <PrimaryButton title={"Download Resume"} />
+
+
+                <PrimaryButton title={'Download Resume'} href={omkargavaderesume} />
+
             </div>
         </ImageSectionStyled>
     );

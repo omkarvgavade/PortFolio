@@ -100,6 +100,7 @@ function ContactPage() {
                             <div style={{ marginBottom: "3rem" }} className="form-field form-button">
                                 <input type="submit" style={{
                                     width: "10rem",
+                                    cursor: "pointer",
                                     backgroundColor: "var(--primary-color)"
                                 }} />
 

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import avatar from '../Images/avatar.png'
+import omkargavaderesume from '../Data/Resume/omkargavaderesume.pdf'
 function Navigation() {
     return (
         <NavgiationStyled>
@@ -25,8 +26,13 @@ function Navigation() {
                     <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
                 </li>
                 <li>
+                    <a href={omkargavaderesume} target="_blank">     View Resume</a>
+
+                </li>
+                <li>
                     <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>
+
 
             </ul>
             <footer className="footer">

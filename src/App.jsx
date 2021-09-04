@@ -14,8 +14,8 @@ import { IconButton } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 function App() {
-  const [theme, setTheme] = useState('light-theme')
-  const [checked, setChecked] = useState(true)
+  const [theme, setTheme] = useState('dark-theme')
+  const [checked, setChecked] = useState(false)
   const [navToggle, setNavToggle] = useState(false)
   useEffect(() => {
     document.documentElement.className = theme;

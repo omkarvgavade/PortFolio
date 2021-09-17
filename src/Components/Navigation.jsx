@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import avatar from "../Images/avatar.jpg";
+import avatar2 from "../Images/avatar2.jpeg";
 import omkargavaderesume from "../Data/Resume/omkargavaderesume.pdf";
 function Navigation() {
   return (
     <NavgiationStyled>
       <div className="avatar">
-        <img src={avatar} alt="" />
+        <img src={avatar2} alt="" />
       </div>
       <ul className="nav-items">
         <li className="nav-item">
@@ -69,7 +70,7 @@ const NavgiationStyled = styled.nav`
     padding: 1rem 0;
     img {
       width: 100%;
-      border-radius: 4%;
+      border-radius: 50%;
       border: 8px solid var(--border-color);
     }
   }

@@ -1,57 +1,57 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import avatar from "../Images/avatar.png";
+import avatar from "../Images/avatar.jpg";
 import omkargavaderesume from "../Data/Resume/omkargavaderesume.pdf";
 function Navigation() {
-    return (
-        <NavgiationStyled>
-            <div className="avatar">
-                <img src={avatar} alt="" />
-            </div>
-            <ul className="nav-items">
-                <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about" activeClassName="active-class" exact>
-                        About
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/skills" activeClassName="active-class" exact>
-                        Skills
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/projects" activeClassName="active-class" exact>
-                        Projects
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/blogs" activeClassName="active-class" exact>
-                        Blogs
-                    </NavLink>
-                </li>
-                <li>
-                    <a href={omkargavaderesume} target="_blank">
-                        {" "}
-                        View Resume
-                    </a>
-                </li>
-                <li>
-                    <NavLink to="/contact" activeClassName="active-class" exact>
-                        Contact
-                    </NavLink>
-                </li>
-            </ul>
-            <footer className="footer">
-                <p>@2021 My PortFolio Website</p>
-            </footer>
-        </NavgiationStyled>
-    );
+  return (
+    <NavgiationStyled>
+      <div className="avatar">
+        <img src={avatar} alt="" />
+      </div>
+      <ul className="nav-items">
+        <li className="nav-item">
+          <NavLink to="/" activeClassName="active-class" exact>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" activeClassName="active-class" exact>
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/skills" activeClassName="active-class" exact>
+            Skills
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/projects" activeClassName="active-class" exact>
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/blogs" activeClassName="active-class" exact>
+            Blogs
+          </NavLink>
+        </li>
+        <li>
+          <a href={omkargavaderesume} target="_blank">
+            {" "}
+            View Resume
+          </a>
+        </li>
+        <li>
+          <NavLink to="/contact" activeClassName="active-class" exact>
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+      <footer className="footer">
+        <p>@2021 My PortFolio Website</p>
+      </footer>
+    </NavgiationStyled>
+  );
 }
 
 const NavgiationStyled = styled.nav`
@@ -69,7 +69,7 @@ const NavgiationStyled = styled.nav`
     padding: 1rem 0;
     img {
       width: 100%;
-      border-radius: 50%;
+      border-radius: 4%;
       border: 8px solid var(--border-color);
     }
   }

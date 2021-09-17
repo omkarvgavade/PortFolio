@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navigation from "./Navigation";
 function Sidebar({ navToggle }) {
   return (
-    <SidebarStyled style={{ navToggle }} className={`${navToggle ? "nav-toggle" : ""}`}>
+    <SidebarStyled  className={`${navToggle ? "nav-toggle" : ""}`}>
       <Navigation />
     </SidebarStyled>
   );

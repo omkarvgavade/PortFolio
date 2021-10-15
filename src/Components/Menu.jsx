@@ -4,51 +4,52 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import WebIcon from "@material-ui/icons/Web";
 import LinkIcon from "@material-ui/icons/Link";
 function Menu({ menuItem }) {
-    return (
-        <MenuItemStyled>
-            {menuItem.map((item) => {
-                return (
-                    <div className="grid-item">
-                        <div className="project-content">
-                            <div className="project-image">
-                                <img src={item.image} alt="" />
-                                <ul>
-                                    <li>
-                                        {" "}
-                                        <a target="_blank" href={item.link1}>
-                                            <GitHubIcon />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href={item.link2}>
-                                            <LinkIcon />
-                                        </a>
-                                    </li>
-                                    {item.isBlog ? (
-                                        <li>
-                                            <a target="_blank" href={item.blogLink}>
-                                                <WebIcon />
-                                            </a>
-                                        </li>
-                                    ) : (
-                                        ""
-                                    )}
-                                </ul>
-                            </div>
-                            <h6>{item.title}</h6>
-                            <p>{item.text}</p>
-                        </div>
-                    </div>
-                );
-            })}
-        </MenuItemStyled>
-    );
+  return (
+    <MenuItemStyled>
+      {menuItem.map((item) => {
+        return (
+          <div className="grid-item">
+            <div className="project-content">
+              <div className="project-image">
+                <img src={item.image} alt="" />
+                <ul>
+                  <li>
+                    {" "}
+                    <a target="_blank" href={item.link1}>
+                      <GitHubIcon />
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href={item.link2}>
+                      <LinkIcon />
+                    </a>
+                  </li>
+                  {item.isBlog ? (
+                    <li>
+                      <a target="_blank" href={item.blogLink}>
+                        <WebIcon />
+                      </a>
+                    </li>
+                  ) : (
+                    ""
+                  )}
+                </ul>
+              </div>
+              <h6>{item.title}</h6>
+              <p>{item.text}</p>
+            </div>
+          </div>
+        );
+      })}
+    </MenuItemStyled>
+  );
 }
 
 const MenuItemStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  grid-row-gap: 3rem;
   @media screen and (max-width: 920px) {
     grid-template-columns: repeat(2, 1fr);
   }

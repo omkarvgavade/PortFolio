@@ -71,7 +71,7 @@ const NavgiationStyled = styled.nav`
     img {
       width: 100%;
       border-radius: 50%;
-      border: 8px solid var(--border-color);
+      border: 4px solid var(--border-color);
     }
   }
   .nav-items {

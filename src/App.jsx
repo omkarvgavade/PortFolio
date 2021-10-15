@@ -11,7 +11,6 @@ import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Switch from '@material-ui/core/Switch'
 import { useEffect, useState } from "react";
 import { IconButton } from '@material-ui/core';
-
 import MenuIcon from '@material-ui/icons/Menu';
 function App() {
   const [theme, setTheme] = useState('dark-theme')

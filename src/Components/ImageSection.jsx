@@ -5,50 +5,50 @@ import PrimaryButton from "./PrimaryButton";
 import omkargavaderesume from "../Data/Resume/omkargavaderesume.pdf";
 
 function ImageSection() {
-    return (
-        <ImageSectionStyled>
-            <div className="left-content">
-                <img src={myResume} alt="resumeimage" />
-            </div>
-            <div className="right-content">
-                <h4>
-                    I am <span>Omkar Gavade</span>
-                </h4>
+  return (
+    <ImageSectionStyled>
+      <div className="left-content">
+        <img src={myResume} alt="resumeimage" />
+      </div>
+      <div className="right-content">
+        <h4>
+          I am <span>Omkar Gavade</span>
+        </h4>
 
-                <p className="paragraph">
-                    Dedicated and motivational aspiring full stack web developer,
-                    proficient in MERN stack. Collaborative team player ,eager to work
-                    with interdisciplinary teams for organizational growth, with the
-                    passion for creating new products. Looking forward to start the
-                    journey in product based company.
-                </p>
-                <div className="about-info">
-                    <div className="info-title">
-                        <p>Full Name</p>
-                        <p>Age</p>
-                        <p>Nationality</p>
-                        <p>Languages</p>
+        <p className="paragraph">
+          Dedicated and motivational aspiring full stack web developer,
+          proficient in MERN stack. Collaborative team player ,eager to work
+          with interdisciplinary teams for organizational growth, with the
+          passion for creating new products. Looking forward to start the
+          journey as a full stack web developer.
+        </p>
+        <div className="about-info">
+          <div className="info-title">
+            <p>Full Name</p>
+            <p>Age</p>
+            <p>Nationality</p>
+            <p>Languages</p>
 
-                        <p>Location</p>
+            <p>Location</p>
 
-                        <p>Work</p>
-                    </div>
-                    <div className="info">
-                        <p>: Omkar Gavade</p>
-                        <p>: 22</p>
-                        <p>: Indian</p>
-                        <p>: English, Hindi, Marathi</p>
+            <p>Work</p>
+          </div>
+          <div className="info">
+            <p>: Omkar Gavade</p>
+            <p>: 22</p>
+            <p>: Indian</p>
+            <p>: English, Hindi, Marathi</p>
 
-                        <p>: Kolhapur, Maharashtra</p>
+            <p>: Kolhapur, Maharashtra</p>
 
-                        <p>: Full Stack Web Developer</p>
-                    </div>
-                </div>
+            <p>: Full Stack Web Developer</p>
+          </div>
+        </div>
 
-                <PrimaryButton title={"Download Resume"} href={omkargavaderesume} />
-            </div>
-        </ImageSectionStyled>
-    );
+        <PrimaryButton title={"Download Resume"} href={omkargavaderesume} />
+      </div>
+    </ImageSectionStyled>
+  );
 }
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;

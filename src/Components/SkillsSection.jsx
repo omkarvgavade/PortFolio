@@ -32,7 +32,7 @@ function SkillsSection() {
                         <SkillsLogo img={nodejs} title={"Node js"} />
                         <SkillsLogo img={mongodb} title={"Mongo DB"} />
                         <SkillsLogo img={expressjs} title={"Express js"} />
-                            <div>  </div>
+                           <SkillsLogo img={firebase2} title={"Firebase"} />
                     </div>
                 </div>
             </SkillsSectionStyled>

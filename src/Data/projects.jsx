@@ -3,9 +3,20 @@ import udemy from '../Images/projects/udemy1.png'
 import hirist_logo from '../Images/projects/hirist_logo.webp'
 import facebook from '../Images/projects/facebook.jpg'
 import messwala from '../Images/projects/messwala.jpg'
+import Valet from '../Images/Valet.png'
 export const projects = [
     {
-        id: 1,
+     id:1,
+     image:Valet,
+     link1:'https://github.com/pesto-students/valet-expense-tracker-valet-expense-team',
+     link2:'https://valet-expense-tracker.netlify.app/',
+     title:'Valet Expense Tracker',
+     isBlog:false,
+     blogLink:"",
+     text:"Valet Expense Tracker Valet is an expense tracker website that is designed to provide users with a comprehensive platform to manage their finances effectively and to simplify the process of tracking and managing personal and business expenses."
+    },
+    {
+        id: 2,
         image: trivago,
         link1: "https://github.com/omkarvgavade/trivago-clone",
         link2: "https://trivago24-acp24.vercel.app",
@@ -15,7 +26,7 @@ export const projects = [
         text: "Trivago is a global hotel search platform. They are focused on reshaping the way travelers search for and compare hotels."
     },
     {
-        id: 2,
+        id: 3,
         image: facebook,
         link1: "https://github.com/omkarvgavade/facebook-clone",
         link2: "https://facebook-acp24.vercel.app/login",
@@ -24,7 +35,7 @@ export const projects = [
         text: "Facebook is a leading social media platform across the globe. It has the ability to connect and share with the people you care about."
     },
     {
-        id: 3,
+        id: 4,
         image: udemy,
         link1: "https://github.com/omkarvgavade/Project-Udemy",
         link2: "https://udemy-clone-masai.netlify.app/",
@@ -34,7 +45,7 @@ export const projects = [
         text: "An online education platform where students can buy the courses they like to learn from the top educators around the world and get certified."
     },
     {
-        id: 4,
+        id: 5,
         category: 'Python',
         image: hirist_logo,
         link1: "https://github.com/omkarvgavade/Project-hirist-clone",
@@ -45,7 +56,7 @@ export const projects = [
         text: "An online job-seeking and job-recruiting platform where candidates can apply for jobs and recruiter can post jobs."
     },
     {
-        id: 5,
+        id: 6,
         category: 'Python',
         image: messwala,
         link1: "https://github.com/omkarvgavade/MessWala",

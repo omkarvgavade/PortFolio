@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import avatar from "../Images/avatar.jpg";
-import avatar2 from "../Images/avatar2.jpeg";
+import avatar from "../Images/avatar.jpeg";
 import omkargavaderesume from "../Data/Resume/omkargavaderesume.pdf";
 function Navigation() {
   return (
     <NavgiationStyled>
       <div className="avatar">
-        <img src={avatar2} alt="" />
+        <img src={avatar} alt="" />
       </div>
       <ul className="nav-items">
         <li className="nav-item">
@@ -19,6 +18,11 @@ function Navigation() {
         <li>
           <NavLink to="/about" activeClassName="active-class" exact>
             About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/experience" activeClassName="active-class" exact>
+            Work Experience
           </NavLink>
         </li>
         <li>
@@ -49,7 +53,7 @@ function Navigation() {
         </li>
       </ul>
       <footer className="footer">
-        <p>@2021 My PortFolio Website</p>
+        <p>@2025 My PortFolio Website</p>
       </footer>
     </NavgiationStyled>
   );

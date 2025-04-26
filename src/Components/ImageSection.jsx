@@ -16,11 +16,11 @@ function ImageSection() {
         </h4>
 
         <p className="paragraph">
-          Dedicated and motivational aspiring full stack web developer,
-          proficient in MERN stack. Collaborative team player ,eager to work
-          with interdisciplinary teams for organizational growth, with the
-          passion for creating new products. Looking forward to start the
-          journey as a full stack web developer.
+          Frontend Engineer with 3+ years of experience building scalable web
+          applications using React, Vue.js, and MERN stack. Led cross-functional
+          teams to deliver high-impact features like one-click payment flows and
+          optimized UIs. Passionate about mentoring junior developers and
+          advocating for best practices in component-driven design.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -28,20 +28,18 @@ function ImageSection() {
             <p>Age</p>
             <p>Nationality</p>
             <p>Languages</p>
-
-            <p>Location</p>
-
+            <p>Current Location</p>
+            <p>Native</p>
             <p>Work</p>
           </div>
           <div className="info">
             <p>: Omkar Gavade</p>
-            <p>: 22</p>
+            <p>: 25</p>
             <p>: Indian</p>
             <p>: English, Hindi, Marathi</p>
-
+            <p>: Bengaluru, Karnataka</p>
             <p>: Kolhapur, Maharashtra</p>
-
-            <p>: Full Stack Web Developer</p>
+            <p>: Frontend Developer</p>
           </div>
         </div>
 

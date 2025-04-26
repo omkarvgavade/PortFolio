@@ -18,8 +18,9 @@ function HomePage() {
           Hi, I'm <span>Omkar Gavade</span>
         </h1>
         <p>
-          It's nice to meet you. I am a full stack web developer residing in
-          Maharashtra, India.
+          It's nice to meet you. I am an Experienced Full Stack & Frontend
+          Developer Crafting Seamless Digital Experiences from Maharashtra,
+          India.
         </p>
         <div className="icons">
           <a

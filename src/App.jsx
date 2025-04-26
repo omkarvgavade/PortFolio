@@ -12,6 +12,7 @@ import Switch from '@material-ui/core/Switch'
 import { useEffect, useState } from "react";
 import { IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import WorkExperiencePage from "./Pages/WorkExperiencePage";
 function App() {
   const [theme, setTheme] = useState('dark-theme')
   const [checked, setChecked] = useState(false)
@@ -66,6 +67,9 @@ function App() {
           </Route>
           <Route exact path="/blogs">
             <BlogsPage />
+          </Route>
+          <Route exact path="/experience">
+            <WorkExperiencePage/>
           </Route>
           <Route exact path="/skills">
             <SkillsPage />
